@@ -14,7 +14,10 @@ Financial-Services-Website/
 ├── services.html       # Detailed services page with comprehensive information
 ├── about.html          # About page with company history, team, and values
 ├── contact.html        # Contact page with contact information and inquiry form
+├── portal.html         # Client Portal - sign up, sign in, investment dashboard
 ├── styles.css          # External CSS stylesheet with all styling
+├── portal.css          # Portal-specific styling
+├── portal.js           # Portal functionality - authentication and dashboard
 ├── images/             # Image assets folder
 │   ├── logo.svg                   # Family crest logo - header branding
 │   ├── wealth-portfolio.jpg       # Hero section - wealth and portfolio imagery
@@ -109,6 +112,45 @@ Financial-Services-Website/
    - **Company Links**: Home, Services, About, Team, Careers
    - **Legal Links**: Privacy Policy, Terms of Service, Compliance
    - **Copyright Notice**: Legal disclaimers and compliance statements
+
+### 6. **Client Portal (portal.html)**
+
+#### Authentication Section
+   - **Sign In Form**: For existing clients
+     - Email and password input fields
+     - Sign in button with validation
+     - Link to sign up form
+   - **Sign Up Form**: For new clients
+     - Full name, email, account number, password fields
+     - Create account button
+     - Link to sign in form
+
+#### Dashboard Section (After Login)
+   - **Welcome Message**: Personalized greeting with client name
+   - **Logout Button**: Secure session termination
+
+#### Performance Metrics (Card Layout)
+   - **Account Balance**: Total assets under management
+   - **Year-to-Date Return**: Current year performance percentage
+   - **1-Year Return**: 12-month performance percentage
+   - **Total Gain/Loss**: Cumulative earnings amount
+
+#### Portfolio Performance Chart
+   - 12-month performance visualization
+   - Interactive line chart with gradient fill
+   - Professional data representation
+
+#### Current Holdings Table
+   - Asset type breakdown (US Stocks, International Stocks, Bonds, Alternatives)
+   - Allocation percentages (40%, 25%, 20%, 15%)
+   - Current values for each holding
+   - Gains/losses by position
+
+#### Quick Actions
+   - Request Documents
+   - Schedule Consultation
+   - View Reports
+   - Account Settings
 
 ### 5. **Contact Page (contact.html)**
 

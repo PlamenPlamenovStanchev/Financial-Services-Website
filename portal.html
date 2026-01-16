@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portal - Pinnacle Wealth Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portal.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Pinnacle Wealth Management Crest" class="logo-crest">
+                <div class="logo-text">
+                    <div class="logo-main">PINNACLE</div>
+                    <span class="logo-subtitle">Wealth Management</span>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="portal.html" class="active">Client Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="portal-main">
+        <!-- Authentication Section (Initially Shown) -->
+        <div id="auth-section" class="auth-section">
+            <!-- Sign In Tab -->
+            <div id="signin-form" class="auth-form active">
+                <h1>Client Portal Login</h1>
+                <p class="auth-subtitle">Access your investment performance and account information</p>
+                
+                <form class="form-group">
+                    <div class="form-field">
+                        <label for="signin-email">Email Address:</label>
+                        <input type="email" id="signin-email" placeholder="your@email.com" required>
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="signin-password">Password:</label>
+                        <input type="password" id="signin-password" placeholder="Enter your password" required>
+                    </div>
+                    
+                    <button type="button" class="cta-button signin-button" onclick="signIn()">Sign In</button>
+                </form>
+                
+                <p class="auth-toggle">Don't have an account? <a href="#" onclick="toggleForms()">Sign Up</a></p>
+            </div>
+
+            <!-- Sign Up Tab -->
+            <div id="signup-form" class="auth-form">
+                <h1>Create Your Account</h1>
+                <p class="auth-subtitle">Join Pinnacle's client community</p>
+                
+                <form class="form-group">
+                    <div class="form-field">
+                        <label for="signup-name">Full Name:</label>
+                        <input type="text" id="signup-name" placeholder="John Doe" required>
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="signup-email">Email Address:</label>
+                        <input type="email" id="signup-email" placeholder="your@email.com" required>
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="signup-account">Account Number:</label>
+                        <input type="text" id="signup-account" placeholder="Enter your account number" required>
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="signup-password">Create Password:</label>
+                        <input type="password" id="signup-password" placeholder="Create a strong password" required>
+                    </div>
+                    
+                    <button type="button" class="cta-button signup-button" onclick="signUp()">Create Account</button>
+                </form>
+                
+                <p class="auth-toggle">Already have an account? <a href="#" onclick="toggleForms()">Sign In</a></p>
+            </div>
+        </div>
+
+        <!-- Dashboard Section (Shown After Login) -->
+        <div id="dashboard-section" class="dashboard-section" style="display: none;">
+            <!-- Header with Logout -->
+            <div class="dashboard-header">
+                <h1 id="welcome-message">Welcome, Client!</h1>
+                <button class="logout-button" onclick="logout()">Sign Out</button>
+            </div>
+
+            <!-- Account Overview Cards -->
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <h3>Account Balance</h3>
+                    <p class="card-value" id="account-balance">$0.00</p>
+                    <p class="card-label">Total Assets Under Management</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Year-to-Date Return</h3>
+                    <p class="card-value positive" id="ytd-return">+0.00%</p>
+                    <p class="card-label">Performance this year</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>1-Year Return</h3>
+                    <p class="card-value positive" id="one-year-return">+0.00%</p>
+                    <p class="card-label">12-month performance</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Total Gain/Loss</h3>
+                    <p class="card-value" id="total-gain">$0.00</p>
+                    <p class="card-label">Since account inception</p>
+                </div>
+            </div>
+
+            <!-- Performance Chart Area -->
+            <div class="dashboard-card full-width">
+                <h3>Portfolio Performance</h3>
+                <div id="chart-placeholder" class="chart-placeholder">
+                    <svg viewBox="0 0 600 300" class="mini-chart">
+                        <!-- Simple line chart -->
+                        <polyline points="0,250 75,180 150,200 225,120 300,140 375,80 450,100 525,50 600,70" 
+                                  fill="none" stroke="#b8860b" stroke-width="2" vector-effect="non-scaling-stroke"/>
+                        <polyline points="0,250 75,180 150,200 225,120 300,140 375,80 450,100 525,50 600,70" 
+                                  fill="url(#gradient)" opacity="0.3"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#b8860b;stop-opacity:0.3" />
+                                <stop offset="100%" style="stop-color:#b8860b;stop-opacity:0" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Axes -->
+                        <line x1="0" y1="250" x2="600" y2="250" stroke="#e8e3db" stroke-width="1"/>
+                        <line x1="0" y1="0" x2="0" y2="250" stroke="#e8e3db" stroke-width="1"/>
+                    </svg>
+                </div>
+                <p class="chart-label">Portfolio value over the last 12 months</p>
+            </div>
+
+            <!-- Holdings Section -->
+            <div class="dashboard-card full-width">
+                <h3>Current Holdings</h3>
+                <div class="holdings-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Asset</th>
+                                <th>Allocation</th>
+                                <th>Value</th>
+                                <th>Change</th>
+                            </tr>
+                        </thead>
+                        <tbody id="holdings-body">
+                            <tr>
+                                <td>US Stocks</td>
+                                <td>40%</td>
+                                <td id="usstocks-value">$0.00</td>
+                                <td class="positive">+$0.00</td>
+                            </tr>
+                            <tr>
+                                <td>International Stocks</td>
+                                <td>25%</td>
+                                <td id="intl-value">$0.00</td>
+                                <td class="positive">+$0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Bonds</td>
+                                <td>20%</td>
+                                <td id="bonds-value">$0.00</td>
+                                <td class="positive">+$0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Alternative Investments</td>
+                                <td>15%</td>
+                                <td id="alt-value">$0.00</td>
+                                <td class="positive">+$0.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="dashboard-card full-width">
+                <h3>Quick Actions</h3>
+                <div class="quick-actions">
+                    <button class="action-button" onclick="showMessage('Contact your advisor to request documents.')">Request Documents</button>
+                    <button class="action-button" onclick="showMessage('Schedule a consultation with your wealth advisor.')">Schedule Consultation</button>
+                    <button class="action-button" onclick="showMessage('View detailed quarterly reports.')">View Reports</button>
+                    <button class="action-button" onclick="showMessage('Access your account settings.')">Account Settings</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Information</h4>
+                <p>📍 350 Park Avenue, New York, NY 10022</p>
+                <p>📞 +1 (212) 555-0100</p>
+                <p>✉️ info@pinnaclewealth.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pinnacle Wealth Management. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="portal.js"></script>
+</body>
+</html>
