@@ -21,6 +21,29 @@ body {
     line-height: 1.8;
 }
 
+/* Animations */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 /* Header & Navigation */
 header {
     background: linear-gradient(135deg, var(--dark-blue) 0%, #0f1b2e 100%);
@@ -107,6 +130,15 @@ main {
     margin-bottom: 4rem;
 }
 
+.hero-with-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    text-align: left;
+    padding: 4rem 0;
+}
+
 .hero h1 {
     font-size: 3rem;
     color: var(--dark-blue);
@@ -128,6 +160,27 @@ main {
     max-width: 700px;
     margin: 0 auto 2rem;
     line-height: 1.9;
+}
+
+.hero-with-image .hero-p {
+    margin: 0 0 2rem 0;
+    max-width: none;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    animation: slideInRight 0.8s ease-out;
 }
 
 .cta-button {
@@ -154,6 +207,30 @@ main {
 /* Services Section */
 .services {
     margin: 4rem 0;
+}
+
+.services-with-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin: 4rem 0;
+}
+
+.services-text {
+    flex: 1;
+}
+
+.services-image {
+    flex: 1;
+}
+
+.services-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    animation: slideInLeft 0.8s ease-out;
 }
 
 .section-title {
@@ -218,11 +295,155 @@ main {
     margin: 4rem 0;
 }
 
+.about-with-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 3rem;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.about-text {
+    flex: 1;
+}
+
 .about h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     color: var(--primary-gold);
     font-weight: normal;
+}
+
+.about p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    color: #4a4a4a;
+}
+
+/* Team Office Section */
+.team-office-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 3rem;
+}
+
+.office-content {
+    flex: 1;
+}
+
+.office-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-gold);
+    font-weight: normal;
+}
+
+.office-content p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    color: #4a4a4a;
+}
+
+.office-image {
+    flex: 1;
+}
+
+.office-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    animation: slideInRight 0.8s ease-out;
+}
+
+/* Banking Services Section */
+.banking-services-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 3rem;
+}
+
+.banking-image {
+    flex: 1;
+}
+
+.banking-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.banking-content {
+    flex: 1;
+}
+
+.banking-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-gold);
+    font-weight: normal;
+}
+
+.banking-content p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    color: #4a4a4a;
+}
+
+/* Investment Strategy Section */
+.investment-strategy-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 3rem;
+}
+
+.strategy-content {
+    flex: 1;
+}
+
+.strategy-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-gold);
+    font-weight: normal;
+}
+
+.strategy-content p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    color: #4a4a4a;
+}
+
+.strategy-image {
+    flex: 1;
+}
+
+.strategy-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    animation: slideInRight 0.8s ease-out;
 }
 
 .about p {
@@ -1136,6 +1357,37 @@ footer {
 
     .about {
         padding: 2.5rem 1.5rem;
+    }
+
+    /* Image Layout Responsive */
+    .hero-with-image,
+    .services-with-image,
+    .about-with-image,
+    .team-office-section,
+    .banking-services-section,
+    .investment-strategy-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero-with-image {
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-with-image .hero-p {
+        margin: 0 auto 2rem auto;
+        max-width: 100%;
+    }
+
+    .hero-image img,
+    .services-image img,
+    .about-image img {
+        max-height: 300px;
+        object-fit: contain;
     }
 
     /* Services Page Responsive */

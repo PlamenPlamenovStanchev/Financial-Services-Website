@@ -15,6 +15,15 @@ Financial-Services-Website/
 ├── about.html          # About page with company history, team, and values
 ├── contact.html        # Contact page with contact information and inquiry form
 ├── styles.css          # External CSS stylesheet with all styling
+├── images/             # Image assets folder
+│   ├── wealth-portfolio.jpg       # Hero section - wealth and portfolio imagery
+│   ├── financial-growth.jpg       # Services section - financial growth visualization
+│   ├── investment-strategy.jpg    # Used in both about and services sections
+│   ├── professional-team.jpg      # About page - office and team imagery
+│   ├── banking-services.jpg       # Contact page - banking services imagery
+│   ├── hero-image.svg             # Original SVG illustrations (archived)
+│   ├── services-image.svg         # Original SVG illustrations (archived)
+│   └── about-image.svg            # Original SVG illustrations (archived)
 └── README.md           # This file
 ```
 
@@ -221,6 +230,74 @@ Financial-Services-Website/
    - Link to consultation booking
 
 ### 5. **Footer** (All Pages)
+
+## Images & Visual Assets
+
+The website uses professional JPG photographs integrated throughout the site for visual impact and professional appearance. These images are strategically positioned to complement the content and enhance user engagement.
+
+### Homepage Images
+
+#### Hero Section Image (`wealth-portfolio.jpg`)
+- **Location**: Homepage hero section, positioned to the right of the headline
+- **Purpose**: Creates a professional, wealth-focused first impression
+- **Styling**: Box shadow, smooth slide-in animation from right
+- **Responsive**: Stacks below text on mobile devices
+
+#### Services Section Image (`financial-growth.jpg`)
+- **Location**: Services overview section, next to service cards
+- **Purpose**: Visually represents financial growth and investment success
+- **Styling**: Box shadow, smooth slide-in animation from left
+- **Responsive**: Stacks below service cards on mobile
+
+#### About Section Image (`investment-strategy.jpg`)
+- **Location**: Company values section on homepage
+- **Purpose**: Illustrates investment strategy and professional approach
+- **Styling**: Box shadow, smooth animations
+- **Responsive**: Stacks vertically on mobile
+
+### Services Page Images
+
+#### Investment Strategy Section (`investment-strategy.jpg`)
+- **Location**: Services page - Integrated Approach section
+- **Purpose**: Visually reinforces the integrated service approach
+- **Styling**: Professional presentation with animations
+- **Content**: Represents strategic planning and wealth management
+
+### About Page Images
+
+#### Office & Team Section (`professional-team.jpg`)
+- **Location**: About page - Team Office section
+- **Purpose**: Shows the professional office environment and team
+- **Styling**: Premium presentation with animations
+- **Content**: Conveys professionalism, stability, and expertise
+
+### Contact Page Images
+
+#### Banking Services Section (`banking-services.jpg`)
+- **Location**: Contact page - Private Banking Excellence section
+- **Purpose**: Showcases banking services and facilities
+- **Styling**: Professional layout with animations
+- **Content**: Represents premium banking experience
+
+### Image Positioning Features
+- **Responsive Layout**: All images stack vertically on mobile devices (below 768px width)
+- **Two-Column Grid**: Desktop layout features text on one side, image on the other
+- **Consistent Styling**: All images have:
+  - 8px border radius for subtle rounded corners
+  - Smooth box shadow for depth (0 10px 30px with 25% opacity)
+  - Smooth fade-in animations on page load
+  - Smooth hover effects
+- **Professional Quality**: JPG format provides professional appearance while maintaining reasonable file sizes
+
+### Image Integration Details
+- **Naming Convention**: Descriptive filenames (wealth-portfolio.jpg, financial-growth.jpg, etc.)
+- **File Sizes**: Optimized JPG images (10-14 KB each) for fast loading
+- **Lazy Loading**: Images load as pages render for optimal performance
+- **Alt Text**: All images include descriptive alt text for accessibility
+- **SEO Benefits**: Proper image optimization for search engine visibility
+
+### Original SVG Assets (Archived)
+The original SVG illustrations (hero-image.svg, services-image.svg, about-image.svg) are preserved in the images folder for reference and can be reintroduced if needed. These provide lightweight, scalable backup assets.
 
 ## Design Features
 
