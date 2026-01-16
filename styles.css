@@ -634,25 +634,81 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
+.service-detail-card.expanded {
+    box-shadow: 0 8px 20px rgba(184, 134, 11, 0.15);
+    border-left: 5px solid var(--primary-gold);
+}
+
+/* Service Card Header (Clickable) */
+.service-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+}
+
 .service-icon {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
-    display: inline-block;
+    min-width: 2.5rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.service-title-section {
+    flex: 1;
 }
 
 .service-detail-card h2 {
     color: var(--dark-blue);
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-weight: normal;
     letter-spacing: 0.02em;
 }
 
 .service-intro {
-    font-size: 1.1rem;
-    color: var(--primary-gold);
-    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: var(--charcoal);
+    margin-bottom: 0;
     font-style: italic;
+    line-height: 1.5;
+}
+
+/* Expand/Collapse Icon */
+.expand-icon {
+    font-size: 2rem;
+    color: var(--primary-gold);
+    font-weight: bold;
+    min-width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+    user-select: none;
+    align-self: center;
+}
+
+.service-card-header:hover .expand-icon {
+    color: var(--dark-blue);
+    transform: scale(1.1);
+}
+
+/* Service Content (Expanded) */
+.service-content {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--light-gray);
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .service-detail-card h3 {
@@ -663,6 +719,10 @@ footer {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+.service-detail-card h3:first-child {
+    margin-top: 0;
 }
 
 .service-features {
@@ -693,6 +753,79 @@ footer {
     line-height: 1.8;
     margin-bottom: 1rem;
     font-size: 0.95rem;
+}
+
+/* Service Charts & Graphs */
+.service-chart-container {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: var(--light-gray);
+    border-radius: 4px;
+    border-left: 4px solid var(--primary-gold);
+    overflow-x: auto;
+}
+
+.service-chart {
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+}
+
+/* Service Comparison Tables */
+.service-table-container {
+    margin: 2rem 0;
+    padding: 0;
+    overflow-x: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.service-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 0.9rem;
+}
+
+.service-comparison-table thead {
+    background: var(--dark-blue);
+    color: var(--cream);
+}
+
+.service-comparison-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+    color: var(--primary-gold);
+    border-bottom: 2px solid var(--primary-gold);
+}
+
+.service-comparison-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--light-gray);
+    color: var(--charcoal);
+    line-height: 1.6;
+}
+
+.service-comparison-table tbody tr:nth-child(even) {
+    background: rgba(184, 134, 11, 0.03);
+}
+
+.service-comparison-table tbody tr:hover {
+    background: rgba(184, 134, 11, 0.08);
+    transition: background-color 0.2s ease;
+}
+
+.service-comparison-table tbody tr.table-highlight {
+    background: rgba(184, 134, 11, 0.1);
+    font-weight: bold;
+}
+
+.service-comparison-table tbody tr.table-highlight:hover {
+    background: rgba(184, 134, 11, 0.15);
 }
 
 /* Service Comparison Table */
@@ -1455,12 +1588,50 @@ footer {
         padding: 1.5rem;
     }
 
+    .service-card-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .service-icon {
+        font-size: 2rem;
+    }
+
+    .expand-icon {
+        font-size: 1.5rem;
+        align-self: flex-start;
+        margin-top: 0.5rem;
+    }
+
     .service-detail-card h2 {
         font-size: 1.3rem;
     }
 
+    .service-intro {
+        font-size: 0.9rem;
+    }
+
     .service-detail-card h3 {
         font-size: 1rem;
+    }
+
+    .service-chart-container,
+    .service-table-container {
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .service-chart {
+        min-height: 200px;
+    }
+
+    .service-comparison-table {
+        font-size: 0.8rem;
+    }
+
+    .service-comparison-table th,
+    .service-comparison-table td {
+        padding: 0.75rem;
     }
 
     .comparison-row {
