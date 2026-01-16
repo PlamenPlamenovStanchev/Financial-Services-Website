@@ -12,19 +12,28 @@ This is a static HTML website for **Pinnacle Wealth Management**, a fictional pr
 Financial-Services-Website/
 ├── index.html          # Main HTML file - homepage with overview
 ├── services.html       # Detailed services page with comprehensive information
+├── about.html          # About page with company history, team, and values
 ├── styles.css          # External CSS stylesheet with all styling
 └── README.md           # This file
 ```
 
 ## Website Sections
 
-### 1. **Header & Navigation**
+### 1. **Header & Navigation** (All Pages)
+   - **Logo**: "PINNACLE Wealth Management" in gold lettering
+   - **Navigation Menu**: Links to Home, Services, About, Contact, and Client Portal
+   - **Sticky Header**: Remains visible while scrolling for easy navigation
+   - **Design**: Dark blue gradient background with gold accents
+
+### 2. **Homepage (index.html)**
+
+#### Hero Section
    - **Headline**: "Private Wealth Management"
    - **Tagline**: "Preserving and Growing Generational Wealth Since 1987"
    - **Description**: Introductory paragraph explaining the company's philosophy
    - **Call-to-Action Button**: "Schedule a Consultation" button
 
-### 3. **Services Section**
+#### Services Overview Section
    Six key service offerings presented in elegant card layout:
    
    - **Private Banking** - Exclusive banking privileges for high-net-worth individuals
@@ -34,7 +43,7 @@ Financial-Services-Website/
    - **Tax Optimization** - Expert tax planning to minimize liability
    - **Philanthropic Advisory** - Guidance on charitable giving strategies
 
-### 4. **About Section**
+#### About Section
    - **Company Background**: Founded in 1987 by Edmund Whitmore III
    - **Company Philosophy**: 30+ years of experience with timeless principles
    - **Core Values** (displayed in 4-column grid):
@@ -43,12 +52,117 @@ Financial-Services-Website/
      - **Excellence** - Highest standards in advisory and service
      - **Legacy** - Multi-generational wealth focus
 
-### 5. **Footer**
+### 3. **Services Page (services.html)**
+
+#### Page Header
+   - **Title**: "Our Services"
+   - **Subtitle**: Comprehensive description of service offerings
+
+#### Services Overview
+   - Introductory text explaining the comprehensive service suite
+
+#### Detailed Service Cards
+   Each service includes:
+   - **Service Icon**: Visual emoji identifier
+   - **Service Name**: Clear title
+   - **Introduction**: Brief overview
+   - **Key Features**: Bulleted list of specific features and capabilities
+   - **Details**: In-depth explanation of how the service works
+   - **Use Cases**: Who benefits and when to use the service
+
+   Services covered with detailed information:
+   1. **Private Banking** - Dedicated relationship management, preferred rates, exclusive privileges
+   2. **Investment Management** - Portfolio strategies, asset diversification, risk management
+   3. **Trust & Estate Planning** - Document creation, trust administration, legacy planning
+   4. **Wealth Preservation** - Capital protection, risk management, portfolio resilience
+   5. **Tax Optimization** - Tax planning, entity structure, compliance strategies
+   6. **Philanthropic Advisory** - Charitable giving strategies, impact maximization, legacy giving
+
+#### Service Comparison Table
+   - Quick reference table comparing:
+     - Which service to choose
+     - Best use cases
+     - When to utilize each service
+   - Responsive design that adapts to mobile screens
+
+#### Call-to-Action Section
+   - Encouragement to schedule consultation
+   - Direct link to consultation booking
+
+### 4. **Footer** (All Pages)
    - **Contact Information**: Address, phone, and email
-   - **Services Links**: Quick links to main services
-   - **Company Links**: About, Team, Careers, News & Insights
+   - **Services Links**: Quick links to services and service page
+   - **Company Links**: Home, Services, About, Team, Careers
    - **Legal Links**: Privacy Policy, Terms of Service, Compliance
    - **Copyright Notice**: Legal disclaimers and compliance statements
+
+### 4. **About Page (about.html)**
+
+#### Page Header
+   - **Title**: "About Pinnacle Wealth Management"
+   - **Subtitle**: "Three Decades of Excellence in Private Wealth Management"
+
+#### Company Story Section
+   - Detailed founding history and background
+   - Growth from boutique practice to established firm
+   - Mission statement and philosophical approach
+   - Evolution of services over 37 years
+
+#### Core Values Section (4 Cards)
+   - **Integrity**: Ethical conduct and transparent communication
+   - **Prudence**: Conservative capital preservation approach
+   - **Excellence**: Highest standards in advisory and service
+   - **Legacy**: Multi-generational wealth focus
+   
+   Each value includes descriptive explanation and benefits
+
+#### Leadership Team Section (6 Team Members)
+   Each team member features:
+   - Avatar with initials
+   - Full name
+   - Professional title
+   - Background and credentials
+   - Years of experience and specialization
+   
+   Includes:
+   - Edmund Whitmore III (Founder & CEO)
+   - Jennifer Carlton (Chief Investment Officer)
+   - Michael Chen (Chief Financial Officer)
+   - Patricia Richardson (Senior Wealth Advisor)
+   - David Brennan (Senior Wealth Advisor)
+   - Sarah Thompson (Director of Client Services)
+
+#### Qualifications & Credentials Section
+   - **Professional Certifications**: CFA, CPA, CFP, etc.
+   - **Regulatory Licenses**: SEC Registration, FINRA, SIPC
+   - **Educational Background**: Ivy League schools, MBA programs
+
+#### Why Choose Pinnacle Section (6 Benefits)
+   - **37+ Years**: Track record through multiple market cycles
+   - **500+ Clients**: Trusted by high-net-worth families
+   - **$8B+ AUM**: Assets under management scale
+   - **100% Fiduciary**: Legal obligation to client interest
+   - **1:1 Service**: Personalized relationship management
+   - **24/7 Availability**: Round-the-clock support
+
+#### Wealth Management Process Section (6-Step Process)
+   1. **Initial Discovery**: Comprehensive understanding of client situation
+   2. **Analysis & Planning**: Strategy development
+   3. **Strategy Presentation**: Detailed review of recommendations
+   4. **Implementation**: Execution with coordination
+   5. **Ongoing Management**: Continuous monitoring
+   6. **Regular Review**: Quarterly performance updates
+
+#### Commitment Statement Section
+   - Detailed commitment to clients
+   - 8 Key promises and commitments
+   - Focus on service excellence and integrity
+
+#### Call-to-Action Section
+   - Encouragement to connect with team
+   - Link to consultation booking
+
+### 5. **Footer** (All Pages)
 
 ## Design Features
 

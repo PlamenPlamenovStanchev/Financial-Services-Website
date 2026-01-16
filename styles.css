@@ -521,6 +521,297 @@ footer {
     line-height: 1.8;
 }
 
+/* About Page Styles */
+.about-section {
+    margin: 4rem 0;
+}
+
+.about-content p {
+    font-size: 1.05rem;
+    color: var(--charcoal);
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+}
+
+/* Values Grid */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.value-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.value-card h3 {
+    color: var(--dark-blue);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.value-card p {
+    color: var(--charcoal);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Team Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    background: white;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.member-avatar {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-gold), var(--dark-blue));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.team-member h3 {
+    color: var(--dark-blue);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.member-title {
+    color: var(--primary-gold);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem !important;
+}
+
+.member-bio {
+    color: var(--charcoal);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* Credentials Section */
+.credentials-section {
+    background: var(--light-gray);
+    padding: 3rem;
+    border-radius: 4px;
+}
+
+.credentials-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.credential-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 4px;
+    border-left: 4px solid var(--primary-gold);
+}
+
+.credential-item h4 {
+    color: var(--dark-blue);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.credential-item ul {
+    list-style: none;
+}
+
+.credential-item ul li {
+    color: var(--charcoal);
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.credential-item ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-gold);
+    font-weight: bold;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.benefit-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.benefit-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.benefit-number {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.benefit-item h4 {
+    color: var(--dark-blue);
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+
+.benefit-item p {
+    color: var(--charcoal);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* Process Steps */
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.process-step {
+    background: white;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+.process-step:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-gold);
+    color: var(--dark-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.process-step h3 {
+    color: var(--dark-blue);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+
+.process-step p {
+    color: var(--charcoal);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Commitment Section */
+.commitment-section {
+    background: var(--dark-blue);
+    color: var(--cream);
+    padding: 3rem;
+    border-radius: 4px;
+    margin: 4rem 0;
+}
+
+.commitment-section h2 {
+    font-size: 2rem;
+    color: var(--primary-gold);
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+}
+
+.commitment-section p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+}
+
+.commitment-list {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.commitment-list li {
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+    color: var(--cream);
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.commitment-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-gold);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
@@ -635,5 +926,31 @@ footer {
 
     .service-cta p {
         font-size: 0.95rem;
+    }
+
+    /* About Page Responsive */
+    .values-grid,
+    .team-grid,
+    .credentials-list,
+    .benefits-grid,
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content p {
+        font-size: 0.95rem;
+    }
+
+    .commitment-section {
+        padding: 1.5rem;
+    }
+
+    .commitment-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .commitment-list li {
+        font-size: 0.9rem;
+        padding-left: 1.5rem;
     }
 }
