@@ -812,6 +812,303 @@ footer {
     font-size: 1.2rem;
 }
 
+/* Contact Page Styles */
+.contact-overview {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-overview p {
+    font-size: 1.05rem;
+    color: var(--charcoal);
+    line-height: 1.9;
+}
+
+.contact-section {
+    margin: 4rem 0;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-info-box {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form-box {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-card {
+    padding: 1.5rem;
+    background: var(--light-gray);
+    border-left: 4px solid var(--primary-gold);
+    border-radius: 2px;
+}
+
+.info-icon {
+    font-size: 2rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.info-card h3 {
+    color: var(--dark-blue);
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+
+.info-card p {
+    color: var(--charcoal);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.info-card a {
+    color: var(--primary-gold);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-card a:hover {
+    color: var(--dark-blue);
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: var(--dark-blue);
+    font-size: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    color: var(--charcoal);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-gold);
+    box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-group.checkbox {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.form-group.checkbox input {
+    width: 20px;
+    height: 20px;
+    margin-top: 0.2rem;
+    cursor: pointer;
+}
+
+.form-group.checkbox label {
+    font-weight: normal;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* Locations Grid */
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.location-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--primary-gold);
+    transition: box-shadow 0.3s ease;
+}
+
+.location-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.location-card h3 {
+    color: var(--dark-blue);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.location-details p {
+    color: var(--charcoal);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 0.8rem;
+}
+
+/* FAQ Section */
+.faq-section {
+    background: var(--light-gray);
+    padding: 3rem;
+    border-radius: 4px;
+}
+
+.faq-items {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq-item {
+    background: white;
+    border-left: 4px solid var(--primary-gold);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.faq-header {
+    padding: 1.5rem;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+.faq-header:hover {
+    background: var(--light-gray);
+}
+
+.faq-header h3 {
+    color: var(--dark-blue);
+    font-size: 1.05rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.faq-toggle {
+    color: var(--primary-gold);
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+}
+
+.faq-content {
+    padding: 1.5rem;
+    background: var(--light-gray);
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-content {
+    display: block;
+    max-height: 500px;
+}
+
+.faq-content p {
+    color: var(--charcoal);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Contact Types Grid */
+.contact-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.contact-type-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid var(--primary-gold);
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-type-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.contact-type-card h3 {
+    color: var(--dark-blue);
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+}
+
+.contact-type-card p {
+    color: var(--charcoal);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+}
+
+.contact-type-card strong {
+    color: var(--dark-blue);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
@@ -952,5 +1249,52 @@ footer {
     .commitment-list li {
         font-size: 0.9rem;
         padding-left: 1.5rem;
+    }
+
+    /* Contact Page Responsive */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .locations-grid,
+    .contact-types-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info-box,
+    .contact-form-box {
+        padding: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
+    }
+
+    .faq-section {
+        padding: 1.5rem;
+    }
+
+    .faq-header {
+        padding: 1rem;
+    }
+
+    .faq-header h3 {
+        font-size: 0.95rem;
+    }
+
+    .faq-content {
+        padding: 1rem;
+    }
+
+    .location-card,
+    .contact-type-card {
+        padding: 1.5rem;
     }
 }

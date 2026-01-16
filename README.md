@@ -13,6 +13,7 @@ Financial-Services-Website/
 ├── index.html          # Main HTML file - homepage with overview
 ├── services.html       # Detailed services page with comprehensive information
 ├── about.html          # About page with company history, team, and values
+├── contact.html        # Contact page with contact information and inquiry form
 ├── styles.css          # External CSS stylesheet with all styling
 └── README.md           # This file
 ```
@@ -89,12 +90,69 @@ Financial-Services-Website/
    - Encouragement to schedule consultation
    - Direct link to consultation booking
 
-### 4. **Footer** (All Pages)
+### 5. **Footer** (All Pages)
    - **Contact Information**: Address, phone, and email
    - **Services Links**: Quick links to services and service page
    - **Company Links**: Home, Services, About, Team, Careers
    - **Legal Links**: Privacy Policy, Terms of Service, Compliance
    - **Copyright Notice**: Legal disclaimers and compliance statements
+
+### 5. **Contact Page (contact.html)**
+
+#### Page Header
+   - **Title**: "Contact Us"
+   - **Subtitle**: "Get in Touch With Our Team of Expert Advisors"
+
+#### Contact Overview
+   - Introductory text about the company's commitment to client relationships
+
+#### Contact Information & Form Section (2-Column Layout)
+
+**Contact Information Cards:**
+   - **Office Location**: Full address and mailing information
+   - **Phone**: Main office and emergency contact numbers
+   - **Email**: General inquiries and client support addresses
+   - **Business Hours**: Operating hours and appointment availability
+
+**Contact Form:**
+   - Full Name (required)
+   - Email Address (required)
+   - Phone Number (optional)
+   - Subject dropdown with 8 options (consultation, investment, banking, etc.)
+   - Message textarea (required)
+   - Privacy policy agreement checkbox
+   - Submit button
+
+#### Office Locations Section
+   - **New York Headquarters**: Primary office details with contact person
+   - **Virtual Meetings**: Information about video consultation options
+   - **Global Client Service**: Information about international representation
+
+#### FAQ Section (Expandable)
+   Six frequently asked questions:
+   1. How to schedule initial consultation
+   2. What's required for first meeting
+   3. Minimum asset requirements
+   4. Fiduciary status confirmation
+   5. Fee structure explanation
+   6. Frequency of advisor contact
+
+   Each FAQ item is expandable with clickable headers
+
+#### Contact Types Guide (6 Cards)
+   Routing information for different inquiry types:
+   - **New Client Inquiries**: Email, phone, and team information
+   - **Existing Clients**: Direct support contact info
+   - **Investment Inquiries**: CIO contact details
+   - **Tax & Planning**: CFO contact information
+   - **Estate Planning**: Senior Wealth Advisor contact
+   - **Compliance & Legal**: Compliance department contact
+
+#### Call-to-Action Section
+   - Encouragement to start consultation
+   - Button to schedule consultation
+
+### 6. **Footer** (All Pages)
 
 ### 4. **About Page (about.html)**
 
