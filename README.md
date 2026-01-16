@@ -10,7 +10,8 @@ This is a static HTML website for **Pinnacle Wealth Management**, a fictional pr
 
 ```
 Financial-Services-Website/
-├── index.html          # Main HTML file with page structure and content
+├── index.html          # Main HTML file - homepage with overview
+├── services.html       # Detailed services page with comprehensive information
 ├── styles.css          # External CSS stylesheet with all styling
 └── README.md           # This file
 ```
@@ -18,12 +19,6 @@ Financial-Services-Website/
 ## Website Sections
 
 ### 1. **Header & Navigation**
-   - **Logo**: "PINNACLE Wealth Management" in gold lettering
-   - **Navigation Menu**: Links to Services, About, Contact, and Client Portal
-   - **Sticky Header**: Remains visible while scrolling for easy navigation
-   - **Design**: Dark blue gradient background with gold accents
-
-### 2. **Hero Section**
    - **Headline**: "Private Wealth Management"
    - **Tagline**: "Preserving and Growing Generational Wealth Since 1987"
    - **Description**: Introductory paragraph explaining the company's philosophy
