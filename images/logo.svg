@@ -1,0 +1,80 @@
+<svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .crest-shield { fill: #1a2b4d; stroke: #b8860b; stroke-width: 2; }
+      .crest-accent { fill: #b8860b; }
+      .crest-text { font-family: Georgia, serif; font-weight: bold; fill: #b8860b; }
+      .crest-detail { fill: none; stroke: #b8860b; stroke-width: 1.5; }
+    </style>
+  </defs>
+  
+  <!-- Decorative top crown -->
+  <g id="crown">
+    <!-- Crown base -->
+    <path d="M 60 20 L 140 20 L 140 35 L 100 30 L 60 35 Z" class="crest-accent"/>
+    
+    <!-- Crown points -->
+    <polygon points="75,20 70,8 80,15" class="crest-accent"/>
+    <polygon points="100,15 95,0 105,12" class="crest-accent"/>
+    <polygon points="125,20 130,8 120,15" class="crest-accent"/>
+    
+    <!-- Crown jewels -->
+    <circle cx="75" cy="8" r="2" class="crest-accent"/>
+    <circle cx="100" cy="0" r="2.5" class="crest-accent"/>
+    <circle cx="125" cy="8" r="2" class="crest-accent"/>
+  </g>
+  
+  <!-- Main shield -->
+  <path d="M 50 35 L 50 120 Q 50 150 100 160 Q 150 150 150 120 L 150 35 Z" class="crest-shield"/>
+  
+  <!-- Shield border detail -->
+  <path d="M 50 35 L 50 120 Q 50 150 100 160 Q 150 150 150 120 L 150 35" class="crest-detail"/>
+  
+  <!-- Vertical center line -->
+  <line x1="100" y1="40" x2="100" y2="155" class="crest-detail" stroke-dasharray="3,2"/>
+  
+  <!-- Left half: Ascending arrow (growth/prosperity) -->
+  <g id="left-element">
+    <!-- Vertical line -->
+    <line x1="75" y1="80" x2="75" y2="130" class="crest-accent" stroke-width="2"/>
+    <!-- Arrow up -->
+    <polygon points="75,70 70,85 80,85" class="crest-accent"/>
+  </g>
+  
+  <!-- Right half: Shield (protection/strength) -->
+  <g id="right-element">
+    <!-- Small shield outline -->
+    <path d="M 110 75 L 125 75 L 125 110 Q 125 120 117.5 123 Q 110 120 110 110 Z" class="crest-detail" stroke-width="1.5"/>
+    <!-- Shield accent fill -->
+    <path d="M 112 80 L 123 80 L 123 108 Q 123 116 117.5 119 Q 112 116 112 108 Z" fill="none" stroke="#b8860b" stroke-width="1" opacity="0.6"/>
+  </g>
+  
+  <!-- Horizontal banner/ribbon -->
+  <rect x="45" y="168" width="110" height="18" rx="2" fill="#1a2b4d" stroke="#b8860b" stroke-width="1.5"/>
+  
+  <!-- Banner decorative edges -->
+  <polygon points="45,168 40,170 45,172" fill="#b8860b"/>
+  <polygon points="155,168 160,170 155,172" fill="#b8860b"/>
+  
+  <!-- Decorative dots on banner -->
+  <circle cx="55" cy="177" r="1.5" class="crest-accent"/>
+  <circle cx="100" cy="177" r="1.5" class="crest-accent"/>
+  <circle cx="145" cy="177" r="1.5" class="crest-accent"/>
+  
+  <!-- Latin motto or text on banner -->
+  <text x="100" y="182" text-anchor="middle" font-size="10" class="crest-text" letter-spacing="2">PRUDENTIA</text>
+  
+  <!-- Decorative scrollwork at base -->
+  <path d="M 70 195 Q 60 200 70 210" class="crest-detail" stroke-width="1.5"/>
+  <path d="M 130 195 Q 140 200 130 210" class="crest-detail" stroke-width="1.5"/>
+  
+  <!-- Corner flourishes -->
+  <circle cx="52" cy="52" r="2" class="crest-accent" opacity="0.5"/>
+  <circle cx="148" cy="52" r="2" class="crest-accent" opacity="0.5"/>
+  <circle cx="52" cy="135" r="2" class="crest-accent" opacity="0.5"/>
+  <circle cx="148" cy="135" r="2" class="crest-accent" opacity="0.5"/>
+  
+  <!-- Bottom decorative elements (swirls) -->
+  <path d="M 80 220 Q 85 215 90 220" class="crest-detail" stroke-width="1" opacity="0.6"/>
+  <path d="M 110 220 Q 115 215 120 220" class="crest-detail" stroke-width="1" opacity="0.6"/>
+</svg>

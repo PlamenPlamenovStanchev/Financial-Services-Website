@@ -14,8 +14,12 @@ Financial-Services-Website/
 ├── services.html       # Detailed services page with comprehensive information
 ├── about.html          # About page with company history, team, and values
 ├── contact.html        # Contact page with contact information and inquiry form
+├── portal.html         # Client Portal - sign up, sign in, investment dashboard
 ├── styles.css          # External CSS stylesheet with all styling
+├── portal.css          # Portal-specific styling
+├── portal.js           # Portal functionality - authentication and dashboard
 ├── images/             # Image assets folder
+│   ├── logo.svg                   # Family crest logo - header branding
 │   ├── wealth-portfolio.jpg       # Hero section - wealth and portfolio imagery
 │   ├── financial-growth.jpg       # Services section - financial growth visualization
 │   ├── investment-strategy.jpg    # Used in both about and services sections
@@ -30,10 +34,13 @@ Financial-Services-Website/
 ## Website Sections
 
 ### 1. **Header & Navigation** (All Pages)
-   - **Logo**: "PINNACLE Wealth Management" in gold lettering
+   - **Logo**: Elegant family crest design with "PINNACLE Wealth Management" text
+   - **Crest Design**: Shield-shaped with crown, vertical prosperity arrow, protective shield, and "PRUDENTIA" (Prudence) motto
+   - **Crest Colors**: Dark blue shield with gold accents, reflecting "old money" aesthetic
+   - **Logo Behavior**: Smooth scale animation on hover, responsive sizing for mobile
    - **Navigation Menu**: Links to Home, Services, About, Contact, and Client Portal
    - **Sticky Header**: Remains visible while scrolling for easy navigation
-   - **Design**: Dark blue gradient background with gold accents
+   - **Design**: Dark blue gradient background with gold accents and smooth transitions
 
 ### 2. **Homepage (index.html)**
 
@@ -105,6 +112,45 @@ Financial-Services-Website/
    - **Company Links**: Home, Services, About, Team, Careers
    - **Legal Links**: Privacy Policy, Terms of Service, Compliance
    - **Copyright Notice**: Legal disclaimers and compliance statements
+
+### 6. **Client Portal (portal.html)**
+
+#### Authentication Section
+   - **Sign In Form**: For existing clients
+     - Email and password input fields
+     - Sign in button with validation
+     - Link to sign up form
+   - **Sign Up Form**: For new clients
+     - Full name, email, account number, password fields
+     - Create account button
+     - Link to sign in form
+
+#### Dashboard Section (After Login)
+   - **Welcome Message**: Personalized greeting with client name
+   - **Logout Button**: Secure session termination
+
+#### Performance Metrics (Card Layout)
+   - **Account Balance**: Total assets under management
+   - **Year-to-Date Return**: Current year performance percentage
+   - **1-Year Return**: 12-month performance percentage
+   - **Total Gain/Loss**: Cumulative earnings amount
+
+#### Portfolio Performance Chart
+   - 12-month performance visualization
+   - Interactive line chart with gradient fill
+   - Professional data representation
+
+#### Current Holdings Table
+   - Asset type breakdown (US Stocks, International Stocks, Bonds, Alternatives)
+   - Allocation percentages (40%, 25%, 20%, 15%)
+   - Current values for each holding
+   - Gains/losses by position
+
+#### Quick Actions
+   - Request Documents
+   - Schedule Consultation
+   - View Reports
+   - Account Settings
 
 ### 5. **Contact Page (contact.html)**
 
@@ -230,6 +276,44 @@ Financial-Services-Website/
    - Link to consultation booking
 
 ### 5. **Footer** (All Pages)
+
+## Logo & Branding
+
+### Family Crest Logo (`logo.svg`)
+The website features a custom-designed family crest logo that embodies the "old money" aesthetic and conveys trust, stability, and heritage.
+
+#### Design Elements
+- **Shield Shape**: Classic heraldic shield design in dark blue (`#1a2b4d`)
+- **Crown**: Ornate crown at the top with three jeweled points, representing nobility and leadership
+- **Left Element**: Ascending arrow with vertical line, symbolizing prosperity and financial growth
+- **Right Element**: Protective shield outline, representing capital preservation and security
+- **Motto**: "PRUDENTIA" (Latin for Prudence) displayed on a gold banner at the base
+- **Decorative Details**: 
+  - Corner flourishes and corner jewels for elegance
+  - Scrollwork at the base for classical appeal
+  - Vertical center line for heraldic tradition
+  - Gold accents throughout for luxury and prestige
+
+#### Color Scheme
+- **Shield**: Dark blue (`#1a2b4d`) - trust, professionalism, stability
+- **Accents**: Primary gold (`#b8860b`) - wealth, luxury, prestige
+- **Details**: Subtle opacity variations for depth
+
+#### Logo Behavior
+- **Display**: Prominently placed in header next to "PINNACLE Wealth Management" text
+- **Size**: 60px on desktop, responsive scaling to 50px on mobile
+- **Hover Effect**: Smooth scale animation (1.05x) and enhanced shadow on hover
+- **Responsive**: Logo maintains aspect ratio and appearance across all device sizes
+- **Accessibility**: Proper alt text for screen readers
+
+#### Technical Details
+- **Format**: SVG (scalable vector graphics)
+- **Benefits**: 
+  - Perfect scaling on all screen sizes
+  - Lightweight file size
+  - Professional appearance
+  - Easy to customize if needed
+- **Integration**: Seamlessly integrated into header on all four pages
 
 ## Images & Visual Assets
 

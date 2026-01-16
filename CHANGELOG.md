@@ -1,4 +1,158 @@
-# Website Updates - Image Integration
+# Website Updates - Logo & Branding
+
+## Latest Update: Family Crest Logo Addition
+
+### Summary
+Added an elegant family crest logo to the Pinnacle Wealth Management website. The logo features a shield design with crown, prosperity arrow, and protective elements, embodying the "old money" aesthetic and heritage of the firm.
+
+### Logo Design Details
+
+**File Created**: `images/logo.svg` (3,568 bytes)
+
+**Design Elements**:
+- **Shield**: Classic heraldic dark blue shield as the foundation
+- **Crown**: Ornate three-pointed crown with jeweled tips at the top
+- **Left Half**: Ascending arrow with vertical prosperity line (represents financial growth)
+- **Right Half**: Protective shield outline (represents capital preservation and security)
+- **Banner**: Gold ribbon at base with "PRUDENTIA" (Latin for Prudence) motto
+- **Decorative Elements**: 
+  - Corner flourishes and corner jewels for elegance
+  - Scrollwork flourishes for classical appeal
+  - Subtle opacity variations for depth
+  - Vertical center line following heraldic tradition
+
+**Color Scheme**:
+- Shield: Dark blue (`#1a2b4d`)
+- Accents: Primary gold (`#b8860b`)
+- Subtle opacity variations for sophisticated appearance
+
+### HTML Changes
+
+**Files Updated**: All four pages (index.html, services.html, about.html, contact.html)
+
+**Header Structure Changed**:
+```html
+<!-- Before -->
+<a href="#" class="logo">
+    PINNACLE
+    <span class="logo-subtitle">Wealth Management</span>
+</a>
+
+<!-- After -->
+<a href="index.html" class="logo">
+    <img src="images/logo.svg" alt="Pinnacle Wealth Management Crest" class="logo-crest">
+    <div class="logo-text">
+        <div class="logo-main">PINNACLE</div>
+        <span class="logo-subtitle">Wealth Management</span>
+    </div>
+</a>
+```
+
+**Benefits**:
+- Logo now links to homepage (index.html) for better navigation
+- Semantic HTML structure with proper image alt text
+- Flexible layout using flexbox for alignment
+- Responsive design that adapts to all screen sizes
+
+### CSS Changes
+
+**New Classes Added**:
+1. `.logo` - Updated to flexbox layout with gap and hover effects
+2. `.logo-crest` - Image styling (60px on desktop, 50px on mobile)
+3. `.logo-text` - Container for PINNACLE text and subtitle
+4. `.logo-main` - Main "PINNACLE" heading
+5. `.logo-subtitle` - "Wealth Management" subtitle
+
+**Logo Styling Features**:
+- **Size**: 60px × 60px on desktop, 50px × 50px on mobile
+- **Hover Effect**: Smooth scale animation (1.05x) with enhanced shadow
+- **Shadow**: `drop-shadow(0 2px 4px rgba(184, 134, 11, 0.3))` with hover enhancement
+- **Transition**: Smooth 0.3s ease animation on all interactive elements
+- **Responsive**: Proper scaling and spacing adjustments for mobile devices
+
+**Responsive Breakpoints** (< 768px):
+- Logo gap reduced from 1rem to 0.8rem
+- Logo crest reduced to 50px × 50px
+- Logo main font size reduced to 1.3rem
+- Logo subtitle font size maintained at 0.6rem
+- Header container adjusts to accommodate smaller logo
+
+### Documentation Updates
+
+**README.md Changes**:
+1. Added `logo.svg` to file structure documentation
+2. Updated Header & Navigation section to describe crest design
+3. Created new "Logo & Branding" section with:
+   - Design philosophy explanation
+   - Element descriptions (crown, shield, arrow, etc.)
+   - Color scheme documentation
+   - Behavior and interaction details
+   - Technical implementation information
+
+**CHANGELOG.md Created**:
+- Comprehensive documentation of all changes
+- Organized with latest update first
+- Detailed before/after code comparisons
+- Verification checklist
+
+### Technical Implementation
+
+**SVG Advantages**:
+- Scalable to any size without quality loss
+- Lightweight (3.5 KB) for fast loading
+- Professional appearance
+- Easy to customize colors or elements if needed
+- Perfect rendering at all DPI levels
+- Responsive sizing with CSS
+
+**Accessibility**:
+- Proper alt text: "Pinnacle Wealth Management Crest"
+- Semantic HTML structure
+- Proper link element wrapping
+- Keyboard navigation support
+
+### Visual Impact
+
+**Brand Enhancement**:
+- Professional, heritage-focused appearance
+- Conveys trust, stability, and tradition
+- "Old money" aesthetic perfectly executed
+- Differentiates from competitors
+- Creates memorable visual identity
+
+**User Experience**:
+- Logo serves as clickable home link
+- Smooth hover animations enhance interactivity
+- Responsive design ensures perfect appearance on all devices
+- Professional presentation builds client confidence
+
+### Files Modified
+
+1. `images/logo.svg` - NEW file created
+2. `index.html` - Header logo updated
+3. `services.html` - Header logo updated
+4. `about.html` - Header logo updated
+5. `contact.html` - Header logo updated
+6. `styles.css` - New logo styling rules added
+7. `README.md` - Documentation updated
+8. `CHANGELOG.md` - Documentation created
+
+### Verification Checklist
+
+✅ Logo file created successfully
+✅ Logo displays on all four pages
+✅ Logo links to homepage correctly
+✅ Hover effects working smoothly
+✅ Responsive design verified on mobile
+✅ SVG rendering quality verified
+✅ Color scheme matches design guidelines
+✅ Alt text and accessibility implemented
+✅ Documentation complete and accurate
+✅ File sizes optimized
+
+---
+
+# Previous Update: Image Integration
 
 ## Summary
 Successfully integrated 5 real JPG images throughout the Pinnacle Wealth Management website. Renamed generic filenames to descriptive names and strategically placed images on all four pages of the site.

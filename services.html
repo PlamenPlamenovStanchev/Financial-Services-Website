@@ -11,8 +11,11 @@
     <header>
         <div class="header-container">
             <a href="index.html" class="logo">
-                PINNACLE
-                <span class="logo-subtitle">Wealth Management</span>
+                <img src="images/logo.svg" alt="Pinnacle Wealth Management Crest" class="logo-crest">
+                <div class="logo-text">
+                    <div class="logo-main">PINNACLE</div>
+                    <span class="logo-subtitle">Wealth Management</span>
+                </div>
             </a>
             <nav>
                 <ul>
@@ -47,221 +50,886 @@
         <!-- Service Details -->
         <section class="service-details">
             <!-- Private Banking -->
-            <div class="service-detail-card">
-                <div class="service-icon">🏦</div>
-                <h2>Private Banking</h2>
-                <p class="service-intro">
-                    Exclusive banking privileges designed for distinguished clients who demand the highest level of 
-                    service and convenience.
-                </p>
+            <div class="service-detail-card" data-service="private-banking">
+                <div class="service-card-header">
+                    <div class="service-icon">🏦</div>
+                    <div class="service-title-section">
+                        <h2>Private Banking</h2>
+                        <p class="service-intro">
+                            Exclusive banking privileges designed for distinguished clients who demand the highest level of 
+                            service and convenience.
+                        </p>
+                    </div>
+                    <div class="expand-icon">+</div>
+                </div>
                 
-                <h3>Key Features:</h3>
-                <ul class="service-features">
-                    <li>Dedicated relationship manager available 24/7</li>
-                    <li>Preferred interest rates on deposits and loans</li>
-                    <li>Waived fees on premium banking services</li>
-                    <li>Priority access to investment opportunities</li>
-                    <li>Personalized cash management solutions</li>
-                    <li>International banking services and currency exchange</li>
-                    <li>Private credit facilities with customized terms</li>
-                </ul>
+                <div class="service-content" style="display: none;">
+                    <h3>Key Features:</h3>
+                    <ul class="service-features">
+                        <li>Dedicated relationship manager available 24/7</li>
+                        <li>Preferred interest rates on deposits and loans</li>
+                        <li>Waived fees on premium banking services</li>
+                        <li>Priority access to investment opportunities</li>
+                        <li>Personalized cash management solutions</li>
+                        <li>International banking services and currency exchange</li>
+                        <li>Private credit facilities with customized terms</li>
+                    </ul>
 
-                <h3>Who Benefits:</h3>
-                <p>
-                    Entrepreneurs, executives, professionals, and families with substantial liquid assets seeking 
-                    convenience, preferential terms, and white-glove service.
-                </p>
+                    <h3>Who Benefits:</h3>
+                    <p>
+                        Entrepreneurs, executives, professionals, and families with substantial liquid assets seeking 
+                        convenience, preferential terms, and white-glove service.
+                    </p>
 
-                <h3>Our Approach:</h3>
-                <p>
-                    We treat your banking relationship as a partnership. Our dedicated team learns your financial 
-                    patterns and proactively suggests solutions before problems arise. From managing payroll to 
-                    coordinating international transactions, we handle the complexities so you can focus on what matters.
-                </p>
+                    <h3>Our Approach:</h3>
+                    <p>
+                        We treat your banking relationship as a partnership. Our dedicated team learns your financial 
+                        patterns and proactively suggests solutions before problems arise. From managing payroll to 
+                        coordinating international transactions, we handle the complexities so you can focus on what matters.
+                    </p>
+
+                    <!-- Banking Performance Chart -->
+                    <h3>Client Satisfaction & Service Metrics</h3>
+                    <div class="service-chart-container">
+                        <svg width="100%" height="300" viewBox="0 0 500 300" class="service-chart">
+                            <!-- Y-axis labels -->
+                            <text x="30" y="25" font-size="12" fill="#666">100%</text>
+                            <text x="30" y="75" font-size="12" fill="#666">75%</text>
+                            <text x="30" y="125" font-size="12" fill="#666">50%</text>
+                            <text x="30" y="175" font-size="12" fill="#666">25%</text>
+                            <text x="30" y="225" font-size="12" fill="#666">0%</text>
+                            
+                            <!-- Grid lines -->
+                            <line x1="50" y1="20" x2="480" y2="20" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="50" y1="70" x2="480" y2="70" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="50" y1="120" x2="480" y2="120" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="50" y1="170" x2="480" y2="170" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="50" y1="220" x2="480" y2="220" stroke="#e0e0e0" stroke-width="1"/>
+                            
+                            <!-- Bars -->
+                            <rect x="60" y="45" width="40" height="175" fill="#b8860b" rx="3"/>
+                            <text x="62" y="235" font-size="11" fill="#666">Satisfaction</text>
+                            
+                            <rect x="120" y="65" width="40" height="155" fill="#28a745" rx="3"/>
+                            <text x="115" y="235" font-size="11" fill="#666">Response Time</text>
+                            
+                            <rect x="180" y="55" width="40" height="165" fill="#ffc107" rx="3"/>
+                            <text x="170" y="235" font-size="11" fill="#666">Problem Resolution</text>
+                            
+                            <rect x="240" y="50" width="40" height="170" fill="#17a2b8" rx="3"/>
+                            <text x="230" y="235" font-size="11" fill="#666">Accessibility</text>
+                            
+                            <rect x="300" y="40" width="40" height="180" fill="#6f42c1" rx="3"/>
+                            <text x="295" y="235" font-size="11" fill="#666">Trust Rating</text>
+                            
+                            <!-- Value labels -->
+                            <text x="75" y="40" font-size="13" font-weight="bold" fill="#b8860b">97%</text>
+                            <text x="135" y="60" font-size="13" font-weight="bold" fill="#28a745">92%</text>
+                            <text x="195" y="50" font-size="13" font-weight="bold" fill="#ffc107">94%</text>
+                            <text x="255" y="45" font-size="13" font-weight="bold" fill="#17a2b8">96%</text>
+                            <text x="315" y="35" font-size="13" font-weight="bold" fill="#6f42c1">99%</text>
+                        </svg>
+                    </div>
+
+                    <!-- Banking Services Table -->
+                    <h3>Service Tier Comparison</h3>
+                    <div class="service-table-container">
+                        <table class="service-comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Standard</th>
+                                    <th>Premium</th>
+                                    <th>Private</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Relationship Manager</td>
+                                    <td>Shared</td>
+                                    <td>Dedicated</td>
+                                    <td>24/7 Dedicated</td>
+                                </tr>
+                                <tr>
+                                    <td>Interest Rates</td>
+                                    <td>Standard</td>
+                                    <td>+0.25%</td>
+                                    <td>+0.75%</td>
+                                </tr>
+                                <tr>
+                                    <td>Monthly Fees</td>
+                                    <td>$15</td>
+                                    <td>Waived</td>
+                                    <td>Waived</td>
+                                </tr>
+                                <tr>
+                                    <td>Min. Balance</td>
+                                    <td>$10,000</td>
+                                    <td>$250,000</td>
+                                    <td>$1,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Credit Facility</td>
+                                    <td>$50,000</td>
+                                    <td>$500,000</td>
+                                    <td>Unlimited</td>
+                                </tr>
+                                <tr>
+                                    <td>International Services</td>
+                                    <td>Limited</td>
+                                    <td>Comprehensive</td>
+                                    <td>Full Access</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
 
             <!-- Investment Management -->
-            <div class="service-detail-card">
-                <div class="service-icon">📈</div>
-                <h2>Investment Management</h2>
-                <p class="service-intro">
-                    Strategic portfolio management grounded in time-tested principles and supported by rigorous 
-                    analysis and disciplined execution.
-                </p>
+            <div class="service-detail-card" data-service="investment-management">
+                <div class="service-card-header">
+                    <div class="service-icon">📈</div>
+                    <div class="service-title-section">
+                        <h2>Investment Management</h2>
+                        <p class="service-intro">
+                            Strategic portfolio management grounded in time-tested principles and supported by rigorous 
+                            analysis and disciplined execution.
+                        </p>
+                    </div>
+                    <div class="expand-icon">+</div>
+                </div>
 
-                <h3>Our Investment Philosophy:</h3>
-                <ul class="service-features">
-                    <li>Long-term wealth accumulation over market timing</li>
-                    <li>Diversification across asset classes and geographies</li>
-                    <li>Risk-adjusted returns matched to your tolerance and timeline</li>
-                    <li>Active management with disciplined rebalancing</li>
-                    <li>Tax-efficient investment strategies</li>
-                    <li>Access to alternative investments and private offerings</li>
-                </ul>
+                <div class="service-content" style="display: none;">
+                    <h3>Our Investment Philosophy:</h3>
+                    <ul class="service-features">
+                        <li>Long-term wealth accumulation over market timing</li>
+                        <li>Diversification across asset classes and geographies</li>
+                        <li>Risk-adjusted returns matched to your tolerance and timeline</li>
+                        <li>Active management with disciplined rebalancing</li>
+                        <li>Tax-efficient investment strategies</li>
+                        <li>Access to alternative investments and private offerings</li>
+                    </ul>
 
-                <h3>Portfolio Management Options:</h3>
-                <p>
-                    <strong>Discretionary Management:</strong> We manage your portfolio with full authority, 
-                    implementing our investment strategy within your risk parameters and preferences. Regular 
-                    performance reporting and quarterly meetings keep you informed.
-                </p>
-                <p>
-                    <strong>Advisory Services:</strong> We provide detailed investment recommendations and analysis, 
-                    with you making final decisions on all transactions.
-                </p>
+                    <h3>Portfolio Management Options:</h3>
+                    <p>
+                        <strong>Discretionary Management:</strong> We manage your portfolio with full authority, 
+                        implementing our investment strategy within your risk parameters and preferences. Regular 
+                        performance reporting and quarterly meetings keep you informed.
+                    </p>
+                    <p>
+                        <strong>Advisory Services:</strong> We provide detailed investment recommendations and analysis, 
+                        with you making final decisions on all transactions.
+                    </p>
 
-                <h3>Asset Classes We Utilize:</h3>
-                <p>
-                    Equities • Fixed Income • Real Estate • Commodities • Alternative Investments • 
-                    Hedge Funds • Private Equity • International Securities
-                </p>
+                    <h3>Asset Classes We Utilize:</h3>
+                    <p>
+                        Equities • Fixed Income • Real Estate • Commodities • Alternative Investments • 
+                        Hedge Funds • Private Equity • International Securities
+                    </p>
+
+                    <!-- Portfolio Allocation Pie Chart -->
+                    <h3>Recommended Portfolio Allocation</h3>
+                    <div class="service-chart-container">
+                        <svg width="100%" height="280" viewBox="0 0 500 280" class="service-chart">
+                            <!-- Pie Chart -->
+                            <defs>
+                                <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                                    <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+                                </filter>
+                            </defs>
+                            
+                            <!-- Equities: 40% (144°) -->
+                            <path d="M 250,150 L 250,50 A 100,100 0 0,1 390,90 Z" fill="#b8860b" filter="url(#shadow)"/>
+                            
+                            <!-- Fixed Income: 30% (108°) -->
+                            <path d="M 390,90 A 100,100 0 0,1 390,210 Z" fill="#28a745" filter="url(#shadow)"/>
+                            
+                            <!-- Real Estate: 15% (54°) -->
+                            <path d="M 390,210 A 100,100 0 0,1 310,245 Z" fill="#ffc107" filter="url(#shadow)"/>
+                            
+                            <!-- Alternatives: 10% (36°) -->
+                            <path d="M 310,245 A 100,100 0 0,1 250,250 Z" fill="#17a2b8" filter="url(#shadow)"/>
+                            
+                            <!-- Commodities: 5% (18°) -->
+                            <path d="M 250,250 A 100,100 0 0,1 230,156 Z" fill="#6f42c1" filter="url(#shadow)"/>
+                            
+                            <!-- Center circle for donut effect -->
+                            <circle cx="250" cy="150" r="60" fill="white"/>
+                            
+                            <!-- Legend -->
+                            <rect x="30" y="200" width="15" height="15" fill="#b8860b"/>
+                            <text x="50" y="212" font-size="12" fill="#333">Equities (40%)</text>
+                            
+                            <rect x="30" y="225" width="15" height="15" fill="#28a745"/>
+                            <text x="50" y="237" font-size="12" fill="#333">Fixed Income (30%)</text>
+                            
+                            <rect x="250" y="200" width="15" height="15" fill="#ffc107"/>
+                            <text x="270" y="212" font-size="12" fill="#333">Real Estate (15%)</text>
+                            
+                            <rect x="250" y="225" width="15" height="15" fill="#17a2b8"/>
+                            <text x="270" y="237" font-size="12" fill="#333">Alternatives (10%)</text>
+                            
+                            <rect x="470" y="225" width="15" height="15" fill="#6f42c1"/>
+                            <text x="380" y="237" font-size="12" fill="#333">Commodities (5%)</text>
+                        </svg>
+                    </div>
+
+                    <!-- Historical Performance Table -->
+                    <h3>Historical Performance by Asset Class</h3>
+                    <div class="service-table-container">
+                        <table class="service-comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Asset Class</th>
+                                    <th>1-Year Return</th>
+                                    <th>3-Year Avg</th>
+                                    <th>5-Year Avg</th>
+                                    <th>10-Year Avg</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>U.S. Equities</strong></td>
+                                    <td style="color: #28a745;">+12.3%</td>
+                                    <td style="color: #28a745;">+9.8%</td>
+                                    <td style="color: #28a745;">+11.2%</td>
+                                    <td style="color: #28a745;">+10.5%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>International</strong></td>
+                                    <td style="color: #28a745;">+8.7%</td>
+                                    <td style="color: #28a745;">+6.2%</td>
+                                    <td style="color: #28a745;">+7.9%</td>
+                                    <td style="color: #28a745;">+7.1%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Fixed Income</strong></td>
+                                    <td style="color: #28a745;">+4.2%</td>
+                                    <td style="color: #28a745;">+3.5%</td>
+                                    <td style="color: #28a745;">+4.1%</td>
+                                    <td style="color: #28a745;">+4.8%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Real Estate</strong></td>
+                                    <td style="color: #28a745;">+6.5%</td>
+                                    <td style="color: #28a745;">+5.8%</td>
+                                    <td style="color: #28a745;">+6.3%</td>
+                                    <td style="color: #28a745;">+5.9%</td>
+                                </tr>
+                                <tr class="table-highlight">
+                                    <td><strong>Blended Portfolio</strong></td>
+                                    <td style="color: #b8860b; font-weight: bold;">+8.5%</td>
+                                    <td style="color: #b8860b; font-weight: bold;">+7.2%</td>
+                                    <td style="color: #b8860b; font-weight: bold;">+8.1%</td>
+                                    <td style="color: #b8860b; font-weight: bold;">+7.8%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
 
             <!-- Trust & Estate Planning -->
-            <div class="service-detail-card">
-                <div class="service-icon">📜</div>
-                <h2>Trust & Estate Planning</h2>
-                <p class="service-intro">
-                    Comprehensive planning to ensure your wealth transfers efficiently to your heirs and charitable 
-                    interests while minimizing tax burden.
-                </p>
+            <div class="service-detail-card" data-service="trust-estate">
+                <div class="service-card-header">
+                    <div class="service-icon">📜</div>
+                    <div class="service-title-section">
+                        <h2>Trust & Estate Planning</h2>
+                        <p class="service-intro">
+                            Comprehensive planning to ensure your wealth transfers efficiently to your heirs and charitable 
+                            interests while minimizing tax burden.
+                        </p>
+                    </div>
+                    <div class="expand-icon">+</div>
+                </div>
 
-                <h3>Services Include:</h3>
-                <ul class="service-features">
-                    <li>Will and trust creation and administration</li>
-                    <li>Revocable and irrevocable trust strategies</li>
-                    <li>Power of attorney and healthcare directives</li>
-                    <li>Charitable remainder trusts and donor-advised funds</li>
-                    <li>Family limited partnerships and LLCs</li>
-                    <li>Generation-skipping transfer planning</li>
-                    <li>Estate tax minimization strategies</li>
-                    <li>Probate avoidance planning</li>
-                </ul>
+                <div class="service-content" style="display: none;">
+                    <h3>Services Include:</h3>
+                    <ul class="service-features">
+                        <li>Will and trust creation and administration</li>
+                        <li>Revocable and irrevocable trust strategies</li>
+                        <li>Power of attorney and healthcare directives</li>
+                        <li>Charitable remainder trusts and donor-advised funds</li>
+                        <li>Family limited partnerships and LLCs</li>
+                        <li>Generation-skipping transfer planning</li>
+                        <li>Estate tax minimization strategies</li>
+                        <li>Probate avoidance planning</li>
+                    </ul>
 
-                <h3>Our Coordinated Approach:</h3>
-                <p>
-                    We work closely with your attorneys and accountants to create an integrated strategy that aligns 
-                    your estate documents with your financial plan and tax situation. We coordinate the transfer of 
-                    assets, ensure beneficiary designations align with your wishes, and help your heirs understand 
-                    their inheritance.
-                </p>
+                    <h3>Our Coordinated Approach:</h3>
+                    <p>
+                        We work closely with your attorneys and accountants to create an integrated strategy that aligns 
+                        your estate documents with your financial plan and tax situation. We coordinate the transfer of 
+                        assets, ensure beneficiary designations align with your wishes, and help your heirs understand 
+                        their inheritance.
+                    </p>
 
-                <h3>Ongoing Administration:</h3>
-                <p>
-                    Beyond planning, we provide comprehensive trust administration services, including asset management, 
-                    tax filing, and communication with beneficiaries.
-                </p>
+                    <h3>Ongoing Administration:</h3>
+                    <p>
+                        Beyond planning, we provide comprehensive trust administration services, including asset management, 
+                        tax filing, and communication with beneficiaries.
+                    </p>
+
+                    <!-- Estate Planning Timeline Chart -->
+                    <h3>Estate Planning Milestones</h3>
+                    <div class="service-chart-container">
+                        <svg width="100%" height="200" viewBox="0 0 500 200" class="service-chart">
+                            <!-- Timeline line -->
+                            <line x1="50" y1="100" x2="480" y2="100" stroke="#b8860b" stroke-width="3"/>
+                            
+                            <!-- Milestone 1 -->
+                            <circle cx="80" cy="100" r="8" fill="#28a745"/>
+                            <text x="60" y="130" font-size="11" font-weight="bold" fill="#333">Initial</text>
+                            <text x="55" y="145" font-size="10" fill="#666">Assessment</text>
+                            
+                            <!-- Milestone 2 -->
+                            <circle cx="160" cy="100" r="8" fill="#28a745"/>
+                            <text x="140" y="130" font-size="11" font-weight="bold" fill="#333">Document</text>
+                            <text x="135" y="145" font-size="10" fill="#666">Review</text>
+                            
+                            <!-- Milestone 3 -->
+                            <circle cx="240" cy="100" r="8" fill="#28a745"/>
+                            <text x="215" y="130" font-size="11" font-weight="bold" fill="#333">Strategy</text>
+                            <text x="215" y="145" font-size="10" fill="#666">Development</text>
+                            
+                            <!-- Milestone 4 -->
+                            <circle cx="320" cy="100" r="8" fill="#28a745"/>
+                            <text x="300" y="130" font-size="11" font-weight="bold" fill="#333">Implementation</text>
+                            <text x="290" y="145" font-size="10" fill="#666">& Execution</text>
+                            
+                            <!-- Milestone 5 -->
+                            <circle cx="400" cy="100" r="8" fill="#b8860b"/>
+                            <text x="375" y="130" font-size="11" font-weight="bold" fill="#333">Annual</text>
+                            <text x="370" y="145" font-size="10" fill="#666">Review</text>
+                            
+                            <!-- Timeline indicators -->
+                            <text x="80" y="70" font-size="11" fill="#17a2b8">Month 1</text>
+                            <text x="150" y="70" font-size="11" fill="#17a2b8">Month 2-3</text>
+                            <text x="225" y="70" font-size="11" fill="#17a2b8">Month 4-6</text>
+                            <text x="300" y="70" font-size="11" fill="#17a2b8">Month 7-9</text>
+                            <text x="370" y="70" font-size="11" fill="#17a2b8">Ongoing</text>
+                        </svg>
+                    </div>
+
+                    <!-- Estate Planning Documents Table -->
+                    <h3>Essential Estate Documents Checklist</h3>
+                    <div class="service-table-container">
+                        <table class="service-comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Document</th>
+                                    <th>Purpose</th>
+                                    <th>Priority</th>
+                                    <th>Review Frequency</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Will</strong></td>
+                                    <td>Direct asset distribution and designate guardian</td>
+                                    <td style="color: #dc3545;">Critical</td>
+                                    <td>Every 3-5 years</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Revocable Living Trust</strong></td>
+                                    <td>Avoid probate and maintain privacy</td>
+                                    <td style="color: #dc3545;">Critical</td>
+                                    <td>Every 3-5 years</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Power of Attorney</strong></td>
+                                    <td>Financial decisions if incapacitated</td>
+                                    <td style="color: #ffc107;">High</td>
+                                    <td>Every 5-10 years</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Healthcare Directive</strong></td>
+                                    <td>Medical decisions if incapacitated</td>
+                                    <td style="color: #ffc107;">High</td>
+                                    <td>Every 5-10 years</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>HIPAA Authorization</strong></td>
+                                    <td>Access to medical information</td>
+                                    <td style="color: #ffc107;">High</td>
+                                    <td>As needed</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Beneficiary Designations</strong></td>
+                                    <td>Direct life insurance and retirement accounts</td>
+                                    <td style="color: #ffc107;">High</td>
+                                    <td>After major life events</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
 
             <!-- Wealth Preservation -->
-            <div class="service-detail-card">
-                <div class="service-icon">🛡️</div>
-                <h2>Wealth Preservation</h2>
-                <p class="service-intro">
-                    Specialized strategies designed to protect your accumulated wealth across economic cycles and 
-                    market volatility.
-                </p>
+            <div class="service-detail-card" data-service="wealth-preservation">
+                <div class="service-card-header">
+                    <div class="service-icon">🛡️</div>
+                    <div class="service-title-section">
+                        <h2>Wealth Preservation</h2>
+                        <p class="service-intro">
+                            Specialized strategies designed to protect your accumulated wealth across economic cycles and 
+                            market volatility.
+                        </p>
+                    </div>
+                    <div class="expand-icon">+</div>
+                </div>
 
-                <h3>Capital Preservation Strategies:</h3>
-                <ul class="service-features">
-                    <li>Defensive portfolio positioning</li>
-                    <li>Hedging strategies for concentrated positions</li>
-                    <li>Insurance planning and risk management</li>
-                    <li>Asset protection strategies</li>
-                    <li>Diversification across geographies and currencies</li>
-                    <li>Income-generating investments for stability</li>
-                    <li>Bond laddering and fixed-income strategies</li>
-                </ul>
+                <div class="service-content" style="display: none;">
+                    <h3>Capital Preservation Strategies:</h3>
+                    <ul class="service-features">
+                        <li>Defensive portfolio positioning</li>
+                        <li>Hedging strategies for concentrated positions</li>
+                        <li>Insurance planning and risk management</li>
+                        <li>Asset protection strategies</li>
+                        <li>Diversification across geographies and currencies</li>
+                        <li>Income-generating investments for stability</li>
+                        <li>Bond laddering and fixed-income strategies</li>
+                    </ul>
 
-                <h3>Risk Management Framework:</h3>
-                <p>
-                    We conduct comprehensive risk assessments to identify vulnerabilities in your wealth structure. 
-                    This includes evaluating concentration risk, market risk, inflation risk, and personal risks such 
-                    as liability and business succession.
-                </p>
+                    <h3>Risk Management Framework:</h3>
+                    <p>
+                        We conduct comprehensive risk assessments to identify vulnerabilities in your wealth structure. 
+                        This includes evaluating concentration risk, market risk, inflation risk, and personal risks such 
+                        as liability and business succession.
+                    </p>
 
-                <h3>Portfolio Resilience:</h3>
-                <p>
-                    Our portfolios are designed to withstand market stress. We stress-test strategies against historical 
-                    scenarios and develop contingency plans. Downside protection receives equal consideration to upside 
-                    potential.
-                </p>
+                    <h3>Portfolio Resilience:</h3>
+                    <p>
+                        Our portfolios are designed to withstand market stress. We stress-test strategies against historical 
+                        scenarios and develop contingency plans. Downside protection receives equal consideration to upside 
+                        potential.
+                    </p>
+
+                    <!-- Risk Dashboard -->
+                    <h3>Wealth Protection Strategies Effectiveness</h3>
+                    <div class="service-chart-container">
+                        <svg width="100%" height="300" viewBox="0 0 500 300" class="service-chart">
+                            <!-- Axis labels -->
+                            <text x="25" y="30" font-size="13" font-weight="bold" fill="#333">Market Drawdown Protection</text>
+                            
+                            <!-- Y-axis -->
+                            <text x="15" y="75" font-size="11" fill="#666">100%</text>
+                            <text x="15" y="125" font-size="11" fill="#666">75%</text>
+                            <text x="15" y="175" font-size="11" fill="#666">50%</text>
+                            <text x="15" y="225" font-size="11" fill="#666">25%</text>
+                            <text x="15" y="275" font-size="11" fill="#666">0%</text>
+                            
+                            <!-- Grid -->
+                            <line x1="45" y1="60" x2="480" y2="60" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="45" y1="110" x2="480" y2="110" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="45" y1="160" x2="480" y2="160" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="45" y1="210" x2="480" y2="210" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="45" y1="260" x2="480" y2="260" stroke="#e0e0e0" stroke-width="1"/>
+                            
+                            <!-- Unprotected portfolio line -->
+                            <polyline points="60,80 140,110 220,170 300,220 380,260" 
+                                      stroke="#dc3545" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+                            
+                            <!-- Hedged portfolio line -->
+                            <polyline points="60,90 140,105 220,125 300,150 380,180" 
+                                      stroke="#ffc107" stroke-width="2" fill="none"/>
+                            
+                            <!-- Protected portfolio line -->
+                            <polyline points="60,100 140,105 220,115 300,130 380,150" 
+                                      stroke="#28a745" stroke-width="2" fill="none"/>
+                            
+                            <!-- X-axis labels -->
+                            <text x="55" y="285" font-size="10" fill="#666">-10%</text>
+                            <text x="135" y="285" font-size="10" fill="#666">-20%</text>
+                            <text x="215" y="285" font-size="10" fill="#666">-30%</text>
+                            <text x="295" y="285" font-size="10" fill="#666">-40%</text>
+                            <text x="375" y="285" font-size="10" fill="#666">-50%</text>
+                            
+                            <!-- Legend -->
+                            <line x1="45" y1="310" x2="65" y2="310" stroke="#dc3545" stroke-width="2" stroke-dasharray="5,5"/>
+                            <text x="70" y="315" font-size="11" fill="#333">Unprotected</text>
+                            
+                            <line x1="210" y1="310" x2="230" y2="310" stroke="#ffc107" stroke-width="2"/>
+                            <text x="235" y="315" font-size="11" fill="#333">Hedged</text>
+                            
+                            <line x1="350" y1="310" x2="370" y2="310" stroke="#28a745" stroke-width="2"/>
+                            <text x="375" y="315" font-size="11" fill="#333">Fully Protected</text>
+                        </svg>
+                    </div>
+
+                    <!-- Risk Mitigation Strategies Table -->
+                    <h3>Risk Mitigation Strategies</h3>
+                    <div class="service-table-container">
+                        <table class="service-comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Risk Type</th>
+                                    <th>Description</th>
+                                    <th>Mitigation Strategy</th>
+                                    <th>Expected Benefit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Market Risk</strong></td>
+                                    <td>Portfolio value fluctuations</td>
+                                    <td>Diversification, hedging</td>
+                                    <td>-15% to -20% dampening</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Concentration Risk</strong></td>
+                                    <td>Over-exposure to single asset</td>
+                                    <td>Strategic diversification</td>
+                                    <td>Reduce volatility 30-40%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Inflation Risk</strong></td>
+                                    <td>Purchasing power erosion</td>
+                                    <td>Real assets, equities</td>
+                                    <td>Maintain real returns</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Longevity Risk</strong></td>
+                                    <td>Outliving assets</td>
+                                    <td>Income strategies, insurance</td>
+                                    <td>Guaranteed income floor</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Liability Risk</strong></td>
+                                    <td>Unexpected legal exposure</td>
+                                    <td>Insurance, entity structure</td>
+                                    <td>Full protection up to limits</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
 
             <!-- Tax Optimization -->
-            <div class="service-detail-card">
-                <div class="service-icon">💼</div>
-                <h2>Tax Optimization</h2>
-                <p class="service-intro">
-                    Proactive tax planning to minimize your tax liability while ensuring full compliance with 
-                    applicable laws and regulations.
-                </p>
+            <div class="service-detail-card" data-service="tax-optimization">
+                <div class="service-card-header">
+                    <div class="service-icon">💼</div>
+                    <div class="service-title-section">
+                        <h2>Tax Optimization</h2>
+                        <p class="service-intro">
+                            Proactive tax planning to minimize your tax liability while ensuring full compliance with 
+                            applicable laws and regulations.
+                        </p>
+                    </div>
+                    <div class="expand-icon">+</div>
+                </div>
 
-                <h3>Tax Planning Services:</h3>
-                <ul class="service-features">
-                    <li>Income tax planning and projection</li>
-                    <li>Capital gains optimization strategies</li>
-                    <li>Tax-loss harvesting implementation</li>
-                    <li>Qualified dividend planning</li>
-                    <li>Entity structure optimization</li>
-                    <li>Executive compensation planning</li>
-                    <li>Business succession tax planning</li>
-                    <li>Multi-state and international tax considerations</li>
-                </ul>
+                <div class="service-content" style="display: none;">
+                    <h3>Tax Planning Services:</h3>
+                    <ul class="service-features">
+                        <li>Income tax planning and projection</li>
+                        <li>Capital gains optimization strategies</li>
+                        <li>Tax-loss harvesting implementation</li>
+                        <li>Qualified dividend planning</li>
+                        <li>Entity structure optimization</li>
+                        <li>Executive compensation planning</li>
+                        <li>Business succession tax planning</li>
+                        <li>Multi-state and international tax considerations</li>
+                    </ul>
 
-                <h3>Integrated Approach:</h3>
-                <p>
-                    Tax planning is most effective when integrated with overall financial and investment planning. 
-                    We coordinate with your CPA and tax attorney to develop strategies that reduce taxes across all 
-                    dimensions of your financial life.
-                </p>
+                    <h3>Integrated Approach:</h3>
+                    <p>
+                        Tax planning is most effective when integrated with overall financial and investment planning. 
+                        We coordinate with your CPA and tax attorney to develop strategies that reduce taxes across all 
+                        dimensions of your financial life.
+                    </p>
 
-                <h3>Annual Tax Review:</h3>
-                <p>
-                    We conduct comprehensive annual tax reviews to identify opportunities for tax reduction and ensure 
-                    you're taking advantage of all available strategies consistent with your objectives.
-                </p>
+                    <h3>Annual Tax Review:</h3>
+                    <p>
+                        We conduct comprehensive annual tax reviews to identify opportunities for tax reduction and ensure 
+                        you're taking advantage of all available strategies consistent with your objectives.
+                    </p>
+
+                    <!-- Tax Savings Opportunity Chart -->
+                    <h3>Average Tax Savings by Strategy</h3>
+                    <div class="service-chart-container">
+                        <svg width="100%" height="320" viewBox="0 0 500 320" class="service-chart">
+                            <!-- Title -->
+                            <text x="250" y="25" font-size="12" text-anchor="middle" fill="#666">Annual Tax Savings (High Income Earner)</text>
+                            
+                            <!-- Y-axis labels -->
+                            <text x="20" y="55" font-size="11" fill="#666">$50K</text>
+                            <text x="20" y="105" font-size="11" fill="#666">$40K</text>
+                            <text x="20" y="155" font-size="11" fill="#666">$30K</text>
+                            <text x="20" y="205" font-size="11" fill="#666">$20K</text>
+                            <text x="20" y="255" font-size="11" fill="#666">$10K</text>
+                            <text x="20" y="305" font-size="11" fill="#666">$0</text>
+                            
+                            <!-- Grid lines -->
+                            <line x1="45" y1="50" x2="480" y2="50" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="45" y1="100" x2="480" y2="100" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="45" y1="150" x2="480" y2="150" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="45" y1="200" x2="480" y2="200" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="45" y1="250" x2="480" y2="250" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="45" y1="300" x2="480" y2="300" stroke="#e0e0e0" stroke-width="1"/>
+                            
+                            <!-- Bars -->
+                            <g>
+                                <!-- Tax Loss Harvesting -->
+                                <rect x="60" y="170" width="35" height="130" fill="#b8860b" rx="2"/>
+                                <text x="60" y="315" font-size="10" fill="#333">Tax-Loss</text>
+                                <text x="63" y="325" font-size="10" fill="#333">Harvest</text>
+                                <text x="72" y="165" font-size="12" font-weight="bold" fill="white">$18K</text>
+                                
+                                <!-- Charitable Giving -->
+                                <rect x="110" y="95" width="35" height="205" fill="#28a745" rx="2"/>
+                                <text x="110" y="315" font-size="10" fill="#333">Charitable</text>
+                                <text x="120" y="325" font-size="10" fill="#333">Giving</text>
+                                <text x="122" y="90" font-size="12" font-weight="bold" fill="white">$41K</text>
+                                
+                                <!-- Entity Optimization -->
+                                <rect x="160" y="140" width="35" height="160" fill="#ffc107" rx="2"/>
+                                <text x="155" y="315" font-size="10" fill="#333">Entity</text>
+                                <text x="162" y="325" font-size="10" fill="#333">Struct</text>
+                                <text x="172" y="135" font-size="12" font-weight="bold" fill="#333">$32K</text>
+                                
+                                <!-- Qualified Dividends -->
+                                <rect x="210" y="210" width="35" height="90" fill="#17a2b8" rx="2"/>
+                                <text x="206" y="315" font-size="10" fill="#333">Qualified</text>
+                                <text x="214" y="325" font-size="10" fill="#333">Divs</text>
+                                <text x="222" y="205" font-size="12" font-weight="bold" fill="white">$18K</text>
+                                
+                                <!-- Retirement Planning -->
+                                <rect x="260" y="130" width="35" height="170" fill="#6f42c1" rx="2"/>
+                                <text x="256" y="315" font-size="10" fill="#333">Retirement</text>
+                                <text x="270" y="325" font-size="10" fill="#333">Plan</text>
+                                <text x="272" y="125" font-size="12" font-weight="bold" fill="white">$34K</text>
+                                
+                                <!-- Income Timing -->
+                                <rect x="310" y="190" width="35" height="110" fill="#20c997" rx="2"/>
+                                <text x="305" y="315" font-size="10" fill="#333">Income</text>
+                                <text x="313" y="325" font-size="10" fill="#333">Timing</text>
+                                <text x="322" y="185" font-size="12" font-weight="bold" fill="white">$22K</text>
+                                
+                                <!-- Estimated Total -->
+                                <rect x="390" y="65" width="35" height="235" fill="#b8860b" rx="2"/>
+                                <text x="380" y="315" font-size="10" fill="#333">Total</text>
+                                <text x="388" y="325" font-size="10" fill="#333">Savings</text>
+                                <text x="397" y="60" font-size="12" font-weight="bold" fill="white">$165K</text>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Tax Strategies Table -->
+                    <h3>Tax Reduction Strategies Comparison</h3>
+                    <div class="service-table-container">
+                        <table class="service-comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Strategy</th>
+                                    <th>Best For</th>
+                                    <th>Annual Benefit</th>
+                                    <th>Complexity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Tax-Loss Harvesting</strong></td>
+                                    <td>Taxable investment accounts</td>
+                                    <td>Up to $18,000</td>
+                                    <td style="color: #28a745;">Low</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Charitable Giving</strong></td>
+                                    <td>Those with substantial giving capacity</td>
+                                    <td>Up to $41,000</td>
+                                    <td style="color: #ffc107;">Medium</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Business Entity Optimization</strong></td>
+                                    <td>Business owners and entrepreneurs</td>
+                                    <td>Up to $32,000</td>
+                                    <td style="color: #ffc107;">Medium</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Qualified Dividend Planning</strong></td>
+                                    <td>High dividend income earners</td>
+                                    <td>Up to $18,000</td>
+                                    <td style="color: #28a745;">Low</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Retirement Plan Optimization</strong></td>
+                                    <td>All income earners</td>
+                                    <td>Up to $34,000</td>
+                                    <td style="color: #ffc107;">Medium</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Income Timing</strong></td>
+                                    <td>Variable income earners</td>
+                                    <td>Up to $22,000</td>
+                                    <td style="color: #dc3545;">High</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
 
             <!-- Philanthropic Advisory -->
-            <div class="service-detail-card">
-                <div class="service-icon">❤️</div>
-                <h2>Philanthropic Advisory</h2>
-                <p class="service-intro">
-                    Comprehensive guidance on charitable giving strategies that maximize impact while optimizing 
-                    tax benefits and aligning with your values.
-                </p>
+            <div class="service-detail-card" data-service="philanthropic-advisory">
+                <div class="service-card-header">
+                    <div class="service-icon">❤️</div>
+                    <div class="service-title-section">
+                        <h2>Philanthropic Advisory</h2>
+                        <p class="service-intro">
+                            Comprehensive guidance on charitable giving strategies that maximize impact while optimizing 
+                            tax benefits and aligning with your values.
+                        </p>
+                    </div>
+                    <div class="expand-icon">+</div>
+                </div>
 
-                <h3>Giving Strategies:</h3>
-                <ul class="service-features">
-                    <li>Donor-advised funds (DAF) management</li>
-                    <li>Charitable trusts and pooled income funds</li>
-                    <li>Appreciated securities and property donations</li>
-                    <li>Private foundation establishment and management</li>
-                    <li>Charitable remainder trusts (CRT)</li>
-                    <li>Charitable lead trusts (CLT)</li>
-                    <li>Donor legacy planning and family giving</li>
-                </ul>
+                <div class="service-content" style="display: none;">
+                    <h3>Giving Strategies:</h3>
+                    <ul class="service-features">
+                        <li>Donor-advised funds (DAF) management</li>
+                        <li>Charitable trusts and pooled income funds</li>
+                        <li>Appreciated securities and property donations</li>
+                        <li>Private foundation establishment and management</li>
+                        <li>Charitable remainder trusts (CRT)</li>
+                        <li>Charitable lead trusts (CLT)</li>
+                        <li>Donor legacy planning and family giving</li>
+                    </ul>
 
-                <h3>Impact Maximization:</h3>
-                <p>
-                    We help you identify causes aligned with your values and develop giving strategies that maximize 
-                    your impact. Whether you support education, healthcare, the arts, or social justice, we help you 
-                    structure gifts for greatest effectiveness.
-                </p>
+                    <h3>Impact Maximization:</h3>
+                    <p>
+                        We help you identify causes aligned with your values and develop giving strategies that maximize 
+                        your impact. Whether you support education, healthcare, the arts, or social justice, we help you 
+                        structure gifts for greatest effectiveness.
+                    </p>
 
-                <h3>Tax Benefits:</h3>
-                <p>
-                    Charitable giving, when properly structured, can provide significant tax deductions. We coordinate 
-                    with your tax advisor to ensure you receive maximum tax benefits while advancing your philanthropic 
-                    goals.
-                </p>
+                    <h3>Tax Benefits:</h3>
+                    <p>
+                        Charitable giving, when properly structured, can provide significant tax deductions. We coordinate 
+                        with your tax advisor to ensure you receive maximum tax benefits while advancing your philanthropic 
+                        goals.
+                    </p>
 
-                <h3>Legacy Through Giving:</h3>
-                <p>
-                    Philanthropy is an important way to create lasting legacy. We help families develop multi-generational 
-                    giving plans that instill values and create meaningful impact for decades to come.
-                </p>
+                    <h3>Legacy Through Giving:</h3>
+                    <p>
+                        Philanthropy is an important way to create lasting legacy. We help families develop multi-generational 
+                        giving plans that instill values and create meaningful impact for decades to come.
+                    </p>
+
+                    <!-- Charitable Impact Analysis -->
+                    <h3>Charitable Giving Impact Analysis</h3>
+                    <div class="service-chart-container">
+                        <svg width="100%" height="250" viewBox="0 0 500 250" class="service-chart">
+                            <!-- Three giving strategies comparison -->
+                            
+                            <!-- Strategy 1: Direct Donation -->
+                            <text x="100" y="25" font-size="12" font-weight="bold" fill="#333">Direct Donation</text>
+                            <rect x="60" y="40" width="80" height="150" fill="#b8860b" opacity="0.7" rx="3"/>
+                            <text x="65" y="100" font-size="12" fill="white" font-weight="bold">$10,000</text>
+                            <text x="62" y="175" font-size="10" fill="#333">To Charity</text>
+                            <text x="62" y="190" font-size="10" fill="#666">Tax Benefit: $2,500</text>
+                            
+                            <!-- Strategy 2: Donor Advised Fund -->
+                            <text x="280" y="25" font-size="12" font-weight="bold" fill="#333">Donor-Advised Fund</text>
+                            <rect x="240" y="40" width="80" height="150" fill="#28a745" opacity="0.7" rx="3"/>
+                            <text x="245" y="60" font-size="11" fill="white">Contribute:</text>
+                            <text x="248" y="78" font-size="12" fill="white" font-weight="bold">$10,000</text>
+                            <text x="252" y="105" font-size="10" fill="white">Invest &</text>
+                            <text x="250" y="120" font-size="10" fill="white">Grow</text>
+                            <text x="240" y="175" font-size="10" fill="#333">To Charity: $12,000+</text>
+                            <text x="242" y="190" font-size="10" fill="#666">Tax Benefit: $3,000+</text>
+                            
+                            <!-- Growth indicator -->
+                            <path d="M 320 70 L 340 40" stroke="#ffc107" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                            <text x="325" y="35" font-size="9" fill="#ffc107">Growth</text>
+                            
+                            <!-- Strategy 3: Charitable Trust -->
+                            <text x="420" y="25" font-size="12" font-weight="bold" fill="#333">Charitable Trust</text>
+                            <rect x="380" y="40" width="80" height="150" fill="#ffc107" opacity="0.7" rx="3"/>
+                            <text x="385" y="65" font-size="11" fill="#333">Contribute:</text>
+                            <text x="388" y="83" font-size="12" fill="#333" font-weight="bold">$10,000</text>
+                            <text x="390" y="110" font-size="10" fill="#333">Income to You</text>
+                            <text x="390" y="125" font-size="10" fill="#333">+ Tax Break</text>
+                            <text x="380" y="175" font-size="10" fill="#333">To Charity: $6,000+</text>
+                            <text x="382" y="190" font-size="10" fill="#666">Immediate Deduction</text>
+                            
+                            <!-- Arrow markers -->
+                            <defs>
+                                <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+                                    <polygon points="0 0, 10 5, 0 10" fill="#ffc107"/>
+                                </marker>
+                            </defs>
+                            
+                            <!-- Bottom note -->
+                            <text x="250" y="220" font-size="10" fill="#666" text-anchor="middle" font-style="italic">
+                                Each strategy provides different benefits - we help choose what's best for your situation
+                            </text>
+                        </svg>
+                    </div>
+
+                    <!-- Charitable Vehicles Table -->
+                    <h3>Charitable Giving Vehicles Comparison</h3>
+                    <div class="service-table-container">
+                        <table class="service-comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Vehicle</th>
+                                    <th>Minimum Contribution</th>
+                                    <th>Tax Deduction</th>
+                                    <th>Control & Flexibility</th>
+                                    <th>Best For</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Donor-Advised Fund</strong></td>
+                                    <td>$5,000</td>
+                                    <td>Immediate full deduction</td>
+                                    <td>Choose grants over time</td>
+                                    <td>Flexible giving, Tax planning</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Charitable Remainder Trust</strong></td>
+                                    <td>$100,000+</td>
+                                    <td>Partial deduction</td>
+                                    <td>Receive income, plan charity gift</td>
+                                    <td>Income + legacy giving</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Charitable Lead Trust</strong></td>
+                                    <td>$100,000+</td>
+                                    <td>Full deduction on income stream</td>
+                                    <td>Remainder to heirs</td>
+                                    <td>Estate planning + charity</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Private Foundation</strong></td>
+                                    <td>$500,000+</td>
+                                    <td>Annual deductions on grants</td>
+                                    <td>Full control, multi-generational</td>
+                                    <td>Major donors, lasting legacy</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Appreciated Securities Donation</strong></td>
+                                    <td>Any amount</td>
+                                    <td>Full market value deduction</td>
+                                    <td>Avoids capital gains tax</td>
+                                    <td>Stock/mutual fund gifts</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Direct Charitable Donations</strong></td>
+                                    <td>Any amount</td>
+                                    <td>Deductible donations</td>
+                                    <td>Simple, immediate</td>
+                                    <td>Annual giving programs</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -397,5 +1065,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="services.js"></script>
 </body>
 </html>
